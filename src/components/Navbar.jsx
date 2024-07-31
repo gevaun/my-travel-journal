@@ -1,4 +1,4 @@
-import globeIcon from '../assets/globeIcon.svg';
+import globeIcon from '../assets/globe-icon.svg';
 
 export default function Navbar() {
     return (
