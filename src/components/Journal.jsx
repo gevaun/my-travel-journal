@@ -1,7 +1,7 @@
 import mapPin from '/src/assets/map-pin.svg'
 
 export default function Journal(props) {
-    console.log(props)
+    // console.log(props)
     return (
         <div className="flex justify-center p-6">
             <div className="p-1 border border-gray-200 rounded-md text-center">
@@ -17,7 +17,7 @@ export default function Journal(props) {
                     <img src={mapPin} className="w-4"/>
                     {props.item.country}
                     <span className="w-4"></span>
-                    <a href={props.item.mapUrl} className="underline underline-offset-4 decoration-1 opacity-50 hover:opacity-75" target="new">View on Google Maps</a>
+                    <a href={props.item.mapUrl} className="underline underline-offset-2 decoration-1 opacity-50 hover:opacity-75 text-sm" target="new">View on Google Maps</a>
                 </div>
                 <div className="text-2xl font-bold pt-2 pb-4">{props.item.location}</div>
                 <div className="text-xs font-medium">{props.item.startDate} - {props.item.endDate}</div>
